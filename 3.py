@@ -16,7 +16,7 @@ def calcular_faturamento(faturamento):
     return menor_faturamento, maior_faturamento, dias_acima_da_media, media_mensal
 
 def main():
-    with open('faturamento.json', 'r') as file:
+    with open('dados.json', 'r') as file:
         faturamento = json.load(file)
     
     menor, maior, dias_acima_media, media_mensal = calcular_faturamento(faturamento)
